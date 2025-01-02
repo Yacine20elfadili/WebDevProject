@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+nav {
+  background-color: #e6f3ff;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #444;
+}
+
+nav ul li a:hover {
+  color: #666;
+}
+
+.welcomePage {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section {
+  margin: 20px auto;  
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  text-align: center;  
+}
+
+.section h1 {
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.section p, .section ul {
+  margin-bottom: 10px;
+}
+
+.section ul {
+  margin-left: 20px;
+  text-align: left;  
+}
+
+button {
+  padding: 8px 15px;
+  background-color: #b3d9ff;  
+  color: #444;
+  border: 1px solid #99ccff;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: #99ccff;
+}
+
+#studentCardForm {
+  max-width: 500px;
+  margin: 0 auto;  
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+}
+
+#studentCardForm label {
+  display: inline-block;
+  width: 200px;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+#studentCardForm input {
+  width: 250px;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+}
+
+#studentCardForm button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #b3d9ff;
+  color: #444;
+  border: 1px solid #99ccff;
+}
+
+#studentCardForm button[type="submit"]:hover {
+  background-color: #99ccff;
+}
+
+a {
+  color: #444;
+}
+
+a:hover {
+  color: #666;
+}
+
+@media (max-width: 480px) {
+  body {
+      padding: 10px;
+  }
+
+  nav {
+      padding: 5px;
+      margin-bottom: 15px;
+  }
+
+  nav ul li {
+      display: block;
+      margin: 8px 0;
+  }
+
+  .welcomePage {
+      width: 100%;
+  }
+
+  .section {
+      margin: 15px auto;
+      padding: 15px;
+  }
+
+  .section h1 {
+      font-size: 1.5em;
+  }
+
+  .section p, .section ul {
+      font-size: 0.9em;
+  }
+
+  #studentCardForm {
+      width: 100%;
+      padding: 15px;
+  }
+
+  #studentCardForm label {
+      width: 100%;
+      margin-bottom: 5px;
+  }
+
+  #studentCardForm input {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  button {
+      width: 100%;
+      padding: 12px;
+      font-size: 1em;
+  }
+}

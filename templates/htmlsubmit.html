@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='submitStyle.css') }}">
+    <title>Carte d'Étudiant</title>
+</head>
+<body>
+    <div class="card-container">
+        <form action="{{ url_for('capture_screenshot') }}" method="POST">
+            <button type="submit" class="screenshot-btn">
+                <i class="fas fa-camera"></i> Capture
+            </button>
+        </form>
+        <div class="student-card">
+            <div class="header">
+                <div class="logo">UNIVERSITÉ</div>
+                <div class="card-type">CARTE ÉTUDIANT</div>
+            </div>
+            
+            <div class="main-content">
+                <div class="photo-section">
+                    <img src="{{ profilePicture }}" alt="Photo d'étudiant">
+                </div>
+                
+                <div class="info-section">
+                    <div class="info-row">
+                        <span class="label">Nom:</span>
+                        <span class="value">{{ lastName }}</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Prénom:</span>
+                        <span class="value">{{ firstName }}</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Filière:</span>
+                        <span class="value">{{ fieldOfStudy }}</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">CIN:</span>
+                        <span class="value">{{ cartidentitenationale }}</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Code Massar:</span>
+                        <span class="value">{{ codemassar }}</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <div class="contact-info">
+                    <div class="contact-item">{{ email }}</div>
+                    <div class="contact-item">{{ phone }}</div>
+                </div>
+                <div class="valid-date">2023-2024</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

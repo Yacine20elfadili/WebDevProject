@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='indexStyle.css') }}">
+    <title>Créer.CV</title>
+</head>
+
+<body>
+    <div class="welcomePage" >
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div id="home" class="section">
+            <h1>Bienvenue sur le Générateur de Carte Étudiant</h1>
+            <p>Générez votre carte d'étudiant rapidement et facilement.</p>
+            <button onclick="document.querySelector('form#studentCardForm').style.display = 'block';
+                             document.querySelector('.welcomePage').style.display      = 'none';">Créer une Carte Étudiant</button>
+        </div>
+
+        <div id="about" class="section">
+            <h1>À propos de nous</h1>
+            <p>
+                Besoin d'une carte d'étudiant ? Notre Générateur de Carte Étudiant rend cela simple et rapide ! Créez votre carte
+                d'identification étudiante officielle en quelques clics.
+            </p>
+            <ul>
+                <li>Générez des cartes d'étudiant professionnelles conformes aux normes institutionnelles</li>
+                <li>Interface facile à utiliser - aucune compétence technique requise</li>
+                <li>Obtenez votre carte d'étudiant numérique en fichier image de haute qualité</li>
+            </ul>
+            <p>
+                Nous comprenons l'importance d'avoir une identification étudiante appropriée. Notre système vous assure d'obtenir une
+                carte d'étudiant standardisée et professionnelle qui inclut toutes les informations nécessaires.
+            </p>
+            <p>Prêt à créer votre carte d'étudiant ? Commencez maintenant !</p>
+        </div>
+
+        <div id="contact" class="section">
+            <h1>Contactez-nous</h1>
+            <p>Besoin d'aide ? Contactez notre équipe de support :</p>
+            <ul>
+                <li><strong>Téléphone :</strong> +212 6 50 32 92 24</li>
+                <li><strong>Email :</strong> elfadiliyacine@gmail.com</li>
+                <li><strong>Site Web :</strong> <a href="https://yacine20elfadili.github.io/myPortfolio/face.html" target="_blank">yacine20elfadili.github.io/myPortfolio.com</a></li>
+                <li><strong>Téléphone :</strong> +212 6 34 14 72 01</li>
+                <li><strong>Email :</strong> fahimyoussef964@gmail.com</li>
+                <li><strong>Site Web :</strong> <a href="https://fahimyoussef05.github.io/portfoliowebsite/" target="_blank">www.studentcard.edu.ma</a></li>
+                <li><strong>Administrateur :</strong> La faculté polydisciplinaire de Taroudant (FPT)</li>
+                <li><strong>Réalisé par :</strong> Mohamed Yacine Elfadili & Fahim Youssef </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <form id="studentCardForm" action="/submit" method="POST" style="display: none;">
+        
+        <label for="firstName">PRÉNOM :</label>
+        <input type="text" id="firstName" name="firstName" value="EXEMPLE" required>
+        <br><br>
+
+        <label for="lastName">NOM :</label>
+        <input type="text" id="lastName" name="lastName" value="EXEMPLE" required>
+        <br><br>
+
+        <label for="fieldOfStudy">Type DIPLÔME :</label>
+        <input type="text" id="fieldOfStudy" name="fieldOfStudy" value="LICENCE en Génie informatique" required>
+        <br><br>
+
+        <label for="CART IDENTITE NATIONALE">Carte D'identité Nationale :</label>
+        <input type="text" id="CART IDENTITE NATIONALE" name="cartidentitenationale" value="AA111222" required>
+        <br><br>
+
+        <label for="CODE MASSAR">Code Massar :</label>
+        <input type="text" id="CODE MASSAR" name="codemassar" value="A111222333" required>
+        <br><br>
+
+        <label for="profilePicture">Photo de profil (URL ou fichier) :</label>
+        <input type="file" id="profilePicture" name="profilePicture">
+        <br><br>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" value="EXEMPLE@gmail.com" required>
+        <br><br>
+
+        <label for="phone">Numéro de téléphone :</label>
+        <input type="tel" id="phone" name="phone" value="+212 0 00 00 00 00" required>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
