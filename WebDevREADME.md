@@ -76,3 +76,5 @@ student-card-generator/
 ## Institution 🏛️
 Faculté Polydisciplinaire de Taroudant (FPT)
 ```
+http://www.fpt.ac.ma/
+```
