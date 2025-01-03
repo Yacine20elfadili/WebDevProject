@@ -63,16 +63,18 @@ nav ul li a:hover {
   text-align: left;  
 }
 
-button {
+button, .button {
   padding: 8px 15px;
-  background-color: #b3d9ff;  
+  background-color: #b3d9ff;
   color: #444;
   border: 1px solid #99ccff;
   cursor: pointer;
   margin: 10px 0;
+  text-decoration: none;
+  display: inline-block;
 }
 
-button:hover {
+button:hover, .button:hover {
   background-color: #99ccff;
 }
 
