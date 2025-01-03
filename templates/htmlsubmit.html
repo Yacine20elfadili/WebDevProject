@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='submitStyle.css') }}">
+    <link rel="stylesheet" type="text/css" href="../static/submitStyle.css"><!-- pour le cas normale -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='submitStyle.css') }}"><!-- pour flask -->
+    
     <title>Carte d'Étudiant</title>
 </head>
 <body>
