@@ -2,6 +2,9 @@
 
 A web application built with Flask that allows students to generate professional student ID cards with their personal information.
 
+## Tutorial Video 🎥
+[Watch the tutorial video here](https://mega.nz/file/BikXFYDb#iKsEqNwvrVPLNE3w9NdZm7DV9kLCTbp_pt8sux9a0b8)
+
 ## Features 🌟
 - User-friendly web interface
 - Form-based data collection
