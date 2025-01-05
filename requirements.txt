@@ -2,3 +2,5 @@ Flask
 pyautogui
 
 you can simply run ---> pip install flask pyautogui
+
+then >>> python flaskapp.py
