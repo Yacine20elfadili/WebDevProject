@@ -3,7 +3,7 @@
 A web application built with Flask that allows students to generate professional student ID cards with their personal information.
 
 ## Tutorial Video 🎥
-[Watch the tutorial video here](https://mega.nz/file/BikXFYDb#iKsEqNwvrVPLNE3w9NdZm7DV9kLCTbp_pt8sux9a0b8)
+<a href="https://mega.nz/file/BikXFYDb#iKsEqNwvrVPLNE3w9NdZm7DV9kLCTbp_pt8sux9a0b8" target="_blank">Watch the tutorial video here</a>
 
 ## Features 🌟
 - User-friendly web interface
