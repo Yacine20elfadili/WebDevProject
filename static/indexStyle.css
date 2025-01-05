@@ -78,6 +78,21 @@ button:hover, .button:hover {
   background-color: #99ccff;
 }
 
+.tutorial-link {
+  text-align: center;
+  margin-top: 15px;
+  display: block;
+}
+
+.tutorial-link a {
+  color: #1e6dbb;
+  font-weight: bold;
+}
+
+.tutorial-link a:hover {
+  color: #e26363;
+}
+
 #studentCardForm {
   max-width: 500px;
   margin: 0 auto;  
